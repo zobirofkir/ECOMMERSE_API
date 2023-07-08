@@ -37,3 +37,34 @@ def get_category_2(id:int):
     
     else:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Not found This category !")
+    
+
+
+def update_category(upd:Diapering_Changings, id:int):
+    db = SessionLocal()
+    updated_category = db.query(Diapering_and_Changing).filter(Diapering_and_Changing.id ==id).first()
+    if updated_category:
+        
+            updated_category.Disposable_diapers == upd.Disposable_diapers,
+            updated_category.Cloth_diapers == upd.Cloth_diapers,
+            updated_category.Diaper_rash_creams == upd.Diaper_rash_creams,
+            updated_category.Changing_mats_or_pads == upd.Changing_mats_or_pads,
+            updated_category.Diaper_bags == upd.Diaper_bags
+            db.commit()
+            return HTTPException(status_code=status.HTTP_200_OK, detail="This category has been updated")
+        
+    else:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Error !')
+    
+
+def delete_categoey(id:int):
+    db = SessionLocal()
+    deleted_category = db.query(Diapering_and_Changing).filter(Diapering_and_Changing.id == id).first()
+    if deleted_category:
+        db.delete(deleted_category)
+        db.commit()
+        return HTTPException(status_code=status.HTTP_200_OK, detail='This category has been deleted success')
+    else:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="This Category not found !")
+    
+

@@ -19,7 +19,7 @@ def catego(id:int):
     return get_category_2(id)
 
 
-@router.put('/delete')
+@router.put('/update')
 def updated_cat(upd:Diapering_Changings, id:int):
     return update_category(upd, id)
 

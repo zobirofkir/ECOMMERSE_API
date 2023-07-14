@@ -87,7 +87,7 @@ class Productss(BaseModel):
     category :str
     photos :str
     video :str
-    prix :str
+    prix :int
 
 
 class Userss(BaseModel):

@@ -5,6 +5,7 @@ from routers.Bathing_and_Groominge import ruter
 from routers.Clothing_and_Accessories import roter
 from routers.Nursery_and_Sleep import rou
 from routers.Travel_and_Transportation import Travel
+from routers.Toys_and_Entertainment import Toys
 
 
 app = FastAPI()
@@ -15,3 +16,4 @@ app.include_router(ruter)
 app.include_router(roter)
 app.include_router(rou)
 app.include_router(Travel)
+app.include_router(Toys)

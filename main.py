@@ -8,9 +8,11 @@ from routers.Travel_and_Transportation import Travel
 from routers.Toys_and_Entertainment import Toys
 from routers.Description import Descriptionse
 from routers.Product import prod
-
+from Authentication.Authentication import api
 app = FastAPI()
 
+
+app.include_router(api)
 app.include_router(router)
 app.include_router(routers)
 app.include_router(ruter)

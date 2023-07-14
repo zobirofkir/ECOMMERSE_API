@@ -105,11 +105,11 @@ class Product(Base):
 
 
 class User(Base):
-    __tablename__='Usersse'
+    __tablename__='User'
     id = Column(Integer, primary_key=True)
     username = Column(String, nullable=False)
     email = Column(String, nullable=False, unique=True)
-    password = Column(String, nullable=False)
+    password_hash = Column(String, nullable=False)
 
 
 

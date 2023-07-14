@@ -17,28 +17,29 @@ This is an API for an E-Commerce application built using FastAPI. It provides en
 - SQLite: Lightweight, serverless database engine
 - Pydantic: Data validation and serialization library
 - JWT: JSON Web Token for user authentication and authorization
+- Docker: Containerization platform
 
 ## Getting Started
+
+### Prerequisites
+
+- Docker
+- Docker Compose
 
 ### Installation
 
 1. Clone the repository:
 
-
+git clone https://github.com/your-username/PROJECT_E_COMMERCE
 
 
 2. Navigate to the project directory:
 
+cd PROJECT_E_COMMERCE
+
+
 
 3. Build and run the Docker containers:
-
-
-
-4. The API will be accessible at `http://localhost:8000`.
-
-### Configuration
-
-1. Modify the environment variables in the `.env` file to suit your needs:
 
 
 API settings
@@ -53,9 +54,6 @@ ALGORITHM=HS256
 CORS settings
 
 ALLOWED_ORIGINS=http://localhost:3000
-
-
-
 
 
 2. Adjust other configuration files as necessary (e.g., database settings, CORS origins).
@@ -76,15 +74,18 @@ The API documentation is available at `http://localhost:8000/docs`.
 
 1. Create a new branch for your feature or bug fix:
 
+git checkout -b feature/my-new-feature
 
 
 2. Make your changes and commit them:
 
-
+3. git commit -am 'Add some feature'
 
 
 3. Push your changes to the remote repository:
 
+
+git push origin feature/my-new-feature
 
 
 4. Submit a pull request for review.

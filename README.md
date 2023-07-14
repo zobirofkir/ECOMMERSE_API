@@ -32,21 +32,17 @@ This is an API for an E-Commerce application that allows users to browse product
 
 git clone https://github.com/your-username/e-commerce-api.git
 
-css
 
 
 2. Navigate to the project directory:
 
 cd e-commerce-api
 
-arduino
-
 
 3. Create a virtual environment:
 
 python -m venv venv
 
-markdown
 
 
 4. Activate the virtual environment:
@@ -55,21 +51,19 @@ markdown
 
 venv\Scripts\activate
 
-diff
 
 
 - Linux/Mac:
 
 source venv/bin/activate
 
-markdown
 
 
 5. Install the dependencies:
 
 pip install -r requirements.txt
 
-markdown
+
 
 
 ### Configuration
@@ -81,7 +75,7 @@ markdown
 DATABASE_URL="sqlite:///database.db"
 SECRET_KEY="your-secret-key"
 
-markdown
+
 
 
 3. Modify the values as per your requirements.
@@ -92,7 +86,7 @@ markdown
 
 alembic upgrade head
 
-markdown
+
 
 
 ### Starting the API
@@ -101,7 +95,7 @@ markdown
 
 uvicorn main:app --reload
 
-csharp
+
 
 
 2. The API will be accessible at `http://localhost:8000`.

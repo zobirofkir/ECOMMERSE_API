@@ -44,7 +44,7 @@ class Clothing_and_Accessories(Base):
 
 class Nursery_and_Sleep(Base):
     __tablename__="Nursery_and_Sleepse"
-    id = Column(String, primary_key=True)
+    id = Column(Integer, primary_key=True)
     Baby_cribs = Column(String, nullable=False)
     Bassinets = Column(String, nullable=False)
     Changing_tables = Column(String, nullable=False)

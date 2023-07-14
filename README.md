@@ -17,14 +17,10 @@ This is an API for an E-Commerce application built using FastAPI. It provides en
 - SQLite: Lightweight, serverless database engine
 - Pydantic: Data validation and serialization library
 - JWT: JSON Web Token for user authentication and authorization
-- Docker: Containerization platform
 
 ## Getting Started
 
 ### Prerequisites
-
-- Docker
-- Docker Compose
 
 ### Installation
 
@@ -39,7 +35,6 @@ cd PROJECT_E_COMMERCE
 
 
 
-3. Build and run the Docker containers:
 
 
 API settings
